@@ -7,6 +7,16 @@
     <title>Movies</title>
 </head>
 <body>
-    <h1>Ciao</h1>
+
+    <div>
+        @foreach ($movies as $el)
+            <h2>{{$el['title']}}</h2>
+            <h2>{{$el['original_title']}}</h2>
+            <p>{{$el['nationality']}}</p>
+            <p>{{$el['date']}}</p>
+            <p>{{$el['vote']}}</p>
+        @endforeach
+    </div>
+
 </body>
 </html>
